@@ -1,0 +1,12 @@
+{
+  "name": "alexeyplodenko/php-dumper",
+  "description": "The package provides a simple dump function, to output the variables and stop execution.",
+  "require": {
+    "php": ">=5.3"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ]
+  }
+}

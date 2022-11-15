@@ -1,6 +1,10 @@
 {
   "name": "alexeyplodenko/php-dumper",
   "description": "The package provides a simple dump function, to output the variables and stop execution.",
+  "type": "library",
+  "keywords": ["debug", "dump"],
+  "homepage": "https://github.com/AlexeyPlodenko/php-dumper",
+  "license": "MIT",
   "require": {
     "php": ">=5.3"
   },

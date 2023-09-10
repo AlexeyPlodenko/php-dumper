@@ -31,8 +31,18 @@ if (!function_exists('d')) {
 
         if (!$isCli) {
             echo '</pre>';
+
+            // output to the STDERR also
+            foreach ($args as $arg) {
+                if (is_scalar($arg)) {
+                    error_log((string)$arg);
+                } else {
+                    error_log(json_encode($arg));
+                }
+            }
+            error_log(str_repeat('^', 80));
         }
 
-        exit;
+        exit(1);
     }
 }

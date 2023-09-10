@@ -6,7 +6,8 @@
   "homepage": "https://github.com/AlexeyPlodenko/php-dumper",
   "license": "MIT",
   "require": {
-    "php": ">=5.3"
+    "php": ">=5.3",
+    "ext-json": "*"
   },
   "autoload": {
     "files": [

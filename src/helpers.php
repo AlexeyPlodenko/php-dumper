@@ -22,7 +22,7 @@ if (!function_exists('d')) {
                 print_r($arg);
             }
 
-            echo($isCli ? "\n\n" : '<hr>');
+            echo ($isCli ? "\n\n" : '<hr>');
         }
 
         // output backtrace

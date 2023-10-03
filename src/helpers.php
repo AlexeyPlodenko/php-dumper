@@ -9,6 +9,14 @@ if (!function_exists('d')) {
     {
         $isCli = (php_sapi_name() === 'cli');
 
+        // empty the output buffers, so the page would contain only the debug messages
+        while (ob_get_level()) {
+            ob_end_clean();
+        }
+
+        // send the HTTP 500 status header
+        header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
+
         if (!$isCli) {
             echo '<pre>';
         }
